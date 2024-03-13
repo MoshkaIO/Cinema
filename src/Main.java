@@ -97,10 +97,10 @@ public static ArrayList<Integer> EarnedMoneyFromHallNum = new ArrayList<>();
         try {
             AdminReading(AdminFileName,Sep);
         } catch(FileNotFoundException e) {
-            System.out.println("Whoop-whoop! Не найден Admins.txt , подключаем значения по умолчанию...");
+            System.out.println("Ошибка! Не найден Admins.txt , подключаем значения по умолчанию...");
             DefaultAdmins();
         } catch (IOException e) {
-            System.out.println("Whoop-whoop! Произошло плохое зло...");
+            System.out.println("Ошибка: Неполадки при работе с файлом...");
             throw new RuntimeException(e); //ГОСПОДИ
         }
     }
