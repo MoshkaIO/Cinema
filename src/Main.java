@@ -97,7 +97,7 @@ public static ArrayList<Integer> EarnedMoneyFromHallNum = new ArrayList<>();
         try {
             AdminReading(AdminFileName,Sep);
         } catch(FileNotFoundException e) {
-            System.out.println("Whoop-whoop! Не найден Admins.txt , подключаем дефолта...");
+            System.out.println("Whoop-whoop! Не найден Admins.txt , подключаем значения по умолчанию...");
             DefaultAdmins();
         } catch (IOException e) {
             System.out.println("Whoop-whoop! Произошло плохое зло...");
